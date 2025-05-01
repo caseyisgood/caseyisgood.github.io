@@ -14,14 +14,14 @@ export default defineConfig({
   head: [
     // ['link', { rel: 'icon', href: '/imgs/icon.ico' }],
 
-    ['link', { rel: 'icon', href: '/imgs/icon_16x16.ico' }]
+    ['link', { rel: 'icon', href: '/icon_16x16.ico' }]
 
   ],
 
 
   themeConfig: {
     logo: {
-      src: '/imgs/avatar.png',
+      src: '/avatar.png',
       alt: 'Logo'
     },
     // https://vitepress.dev/reference/default-theme-config
