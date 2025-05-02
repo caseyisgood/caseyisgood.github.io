@@ -6,6 +6,12 @@ const vitePressConfigs = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // head: [
+  //   ['script', {
+  //     src: 'https://webapi.amap.com/loader.js'
+  //   }]
+  // ],
+
   locales: {
     root: {
       label: 'English',
@@ -160,7 +166,10 @@ export default defineConfig({
   head: [
     // ['link', { rel: 'icon', href: '/imgs/icon.ico' }],
 
-    ['link', { rel: 'icon', href: '/icon_16x16.ico' }]
+    ['link', { rel: 'icon', href: '/icon_16x16.ico' }],
+    // ['script', {
+    //   src: 'https://webapi.amap.com/loader.js'
+    // }]
 
   ],
 

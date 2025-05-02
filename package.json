@@ -8,5 +8,8 @@
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1"
   }
 }
