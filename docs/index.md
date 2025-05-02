@@ -9,6 +9,9 @@ hero:
   # image:
   #   src: /imgs/profile-picture.jpg
   #   alt: Wang Kaixin
+  # image:
+  #   src: /icon.png
+  #   alt: Wang Kaixin
   actions:
     # - theme: brand
     #   text: Markdown Examples
