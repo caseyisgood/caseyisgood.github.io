@@ -1,75 +1,129 @@
 import { defineConfig } from 'vitepress'
 
-const vitePressConfigs = {
-  /* ... */
-};
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // head: [
-  //   ['script', {
-  //     src: 'https://webapi.amap.com/loader.js'
-  //   }]
-  // ],
+  base: '/',
+  head: [
+    ['link', { rel: 'icon', href: '/icon_16x16.ico' }]
+  ],
 
   locales: {
     root: {
       label: 'English',
-      lang: 'en',
+      lang: 'en-US',
       title: 'Wang Kaixin',
       description: "Wang Kaixin's personal website. A Computer Science Student at Wenzhou-Kean University.",
       themeConfig: {
-        "docFooter": {
-          "prev": "Previous page",
-          "next": "Next page"
+        logo: {
+          src: '/avatar.png',
+          alt: 'Logo'
         },
-        "outline": {
-          "label": "On this page"
+        nav: [
+          { text: 'Home', link: '/' },
+          {
+            text: 'About',
+            items: [
+              { text: 'About', link: '/about' },
+              { text: 'Resume', link: '/about/resume' }
+            ]
+          },
+          {
+            text: 'Tutorials',
+            link: '/tutorials/',
+          },
+          { text: 'Contact', link: '/contact' },
+          {
+            text: 'External Links',
+            items: [
+              { text: 'Github', link: 'https://github.com/caseyisgood' },
+              { text: 'CSDN', link: 'https://blog.csdn.net/qq_62540475?spm=1000.2115.3001.5343' }
+            ]
+          }
+        ],
+        search: {
+          provider: 'local',
+          options: {
+            miniSearch: {
+              options: { /* ... */ },
+              searchOptions: { /* ... */ }
+            }
+          }
         },
-        "lastUpdated": {
-          "text": "Last updated"
+        sidebar: {
+          '/contact/': [
+            {
+              text: 'Contact',
+              items: [
+                { text: 'Contact', link: '/contact' }
+              ]
+            }
+          ],
+          '/about/': [
+            {
+              text: 'About',
+              items: [
+                { text: 'About', link: '/about' },
+                { text: 'Resume', link: '/about/resume' }
+              ]
+            }
+          ],
+          '/tutorials/java01': [
+            {
+              text: 'Java Programming: From Words to Works - Ⅰ',
+              items: [
+                { text: 'Preface', link: '/tutorials/java01' },
+                { text: 'Chapter 1 - Introduction', link: '/tutorials/java01/chapter01' }
+              ]
+            }
+          ]
         },
-        "langMenuLabel": "Change language",
-        "returnToTopLabel": "Return to top",
-        "sidebarMenuLabel": "Menu",
-        "darkModeSwitchLabel": "Appearance",
-        "lightModeSwitchTitle": "Switch to light theme",
-        "darkModeSwitchTitle": "Switch to dark theme"
+        footer: {
+          copyright: 'Copyright © 2025-present <a href="https://github.com/caseyisgood" target="_blank">Wang Kaixin</a>'
+        },
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/caseyisgood' }
+        ],
+        docFooter: {
+          prev: "Previous page",
+          next: "Next page"
+        },
+        outline: {
+          label: "On this page"
+        },
+        lastUpdated: {
+          text: "Last updated"
+        },
+        langMenuLabel: "Change language",
+        returnToTopLabel: "Return to top",
+        sidebarMenuLabel: "Menu",
+        darkModeSwitchLabel: "Appearance",
+        lightModeSwitchTitle: "Switch to light theme",
+        darkModeSwitchTitle: "Switch to dark theme"
       }
-
     },
     'zh-CN': {
       label: '简体中文',
-      lang: 'zh-CN', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+      lang: 'zh-CN',
       title: '王凯鑫',
       description: '王凯鑫的个人网站。温州肯恩大学计算机科学专业学生。',
       link: '/zh-CN/',
       themeConfig: {
-        "docFooter": {
-          "prev": "上一页",
-          "next": "下一页"
+        logo: {
+          src: '/avatar.png',
+          alt: 'Logo'
         },
-        "outline": {
-          "label": "本页目录"
-        },
-        "lastUpdated": {
-          "text": "最后更新"
-        },
-        "langMenuLabel": "切换语言",
-        "returnToTopLabel": "返回顶部",
-        "sidebarMenuLabel": "菜单",
-        "darkModeSwitchLabel": "外观",
-        "lightModeSwitchTitle": "切换至浅色主题",
-        "darkModeSwitchTitle": "切换至深色主题",
-
         nav: [
-          { text: '首页', link: '/zh-CN/' }, // 确保路径前缀与语言配置一致
+          { text: '首页', link: '/zh-CN/' },
           {
             text: '关于',
             items: [
               { text: '关于我', link: '/zh-CN/about' },
               { text: '简历', link: '/zh-CN/about/resume' }
             ]
+          },
+          {
+            text: '教程',
+            link: '/zh-CN/tutorials/',
           },
           { text: '联系', link: '/zh-CN/contact' },
           {
@@ -80,7 +134,6 @@ export default defineConfig({
             ]
           }
         ],
-
         search: {
           provider: 'local',
           options: {
@@ -105,30 +158,12 @@ export default defineConfig({
                 }
               }
             },
-
             miniSearch: {
-              /**
-               * @type {Pick<import('minisearch').Options, 'extractField' | 'tokenize' | 'processTerm'>}
-               */
-              options: {
-                /* ... */
-
-
-              },
-              /**
-               * @type {import('minisearch').SearchOptions}
-               * @default
-               * { fuzzy: 0.2, prefix: true, boost: { title: 4, text: 2, titles: 1 } }
-               */
-              searchOptions: {
-                /* ... */
-
-              }
+              options: { /* ... */ },
+              searchOptions: { /* ... */ }
             }
           }
         },
-
-
         sidebar: {
           '/zh-CN/contact/': [
             {
@@ -146,171 +181,38 @@ export default defineConfig({
                 { text: '简历', link: '/zh-CN/about/resume' }
               ]
             }
+          ],
+          '/zh-CN/tutorials/java01': [
+            {
+              text: 'Java编程：从识字到创作 · Ⅰ',
+              items: [
+                { text: '前言', link: '/zh-CN/tutorials/java01' },
+                { text: '第1章 - 绪论', link: '/zh-CN/tutorials/java01/chapter01' }
+              ]
+            }
           ]
         },
-
         footer: {
           copyright: '版权所有 © 2025-至今 <a href="https://github.com/caseyisgood" target="_blank">王凯鑫</a>'
-        }
-
+        },
+        docFooter: {
+          prev: "上一页",
+          next: "下一页"
+        },
+        outline: {
+          label: "本页目录"
+        },
+        lastUpdated: {
+          text: "最后更新"
+        },
+        langMenuLabel: "切换语言",
+        returnToTopLabel: "返回顶部",
+        sidebarMenuLabel: "菜单",
+        darkModeSwitchLabel: "外观",
+        lightModeSwitchTitle: "切换至浅色主题",
+        darkModeSwitchTitle: "切换至深色主题"
       }
-
     }
-  },
-
-  lang: 'en-US',
-  base: '/',
-  title: "Wang Kaixin",
-  description: "Wang Kaixin's personal website. A Computer Science Student at Wenzhou-Kean University.",
-
-  head: [
-    // ['link', { rel: 'icon', href: '/imgs/icon.ico' }],
-
-    ['link', { rel: 'icon', href: '/icon_16x16.ico' }],
-    // ['script', {
-    //   src: 'https://webapi.amap.com/loader.js'
-    // }]
-
-  ],
-
-
-  themeConfig: {
-    logo: {
-      src: '/avatar.png',
-      alt: 'Logo'
-    },
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      {
-        text: 'Home', link: '/'
-      },
-      // { text: 'Examples', link: '/markdown-examples' }
-
-      {
-        text: 'About',
-        items: [
-          { text: 'About', link: '/about' },
-          { text: 'Resume', link: '/about/resume' }
-        ]
-      },
-
-      {
-        text: 'Contact', link: '/contact'
-      },
-
-      {
-        text: 'External Links',
-        items: [
-          { text: 'Github', link: 'https://github.com/caseyisgood' },
-          { text: 'CSDN', link: 'https://blog.csdn.net/qq_62540475?spm=1000.2115.3001.5343' }
-
-        ]
-      }
-    ],
-
-    search: {
-      provider: 'local',
-      options: {
-        miniSearch: {
-          /**
-           * @type {Pick<import('minisearch').Options, 'extractField' | 'tokenize' | 'processTerm'>}
-           */
-          options: {
-            /* ... */
-
-          },
-          /**
-           * @type {import('minisearch').SearchOptions}
-           * @default
-           * { fuzzy: 0.2, prefix: true, boost: { title: 4, text: 2, titles: 1 } }
-           */
-          searchOptions: {
-            /* ... */
-          }
-        }
-      }
-    },
-
-    sidebar: {
-      '/contact/': [
-        {
-          text: 'Contact',
-          items: [
-            { text: 'Contact', link: '/contact' }
-          ]
-        }
-      ],
-
-      'about/': [
-        {
-          text: 'About',
-          items: [
-            { text: 'About', link: '/about' },
-            { text: 'Resume', link: '/about/resume' }
-          ]
-        }
-      ]
-    },
-
-    footer: {
-      // message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-present <a href="https://github.com/caseyisgood" target="_blank">Wang Kaixin</a>'
-
-    },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/caseyisgood' }
-    ],
-
-    // // Add localized theme configuration
-    // "locales": {
-
-    //   'zh-CN': {
-    //     nav: [
-    //       { text: '首页', link: '/zh-CN/' },
-    //       {
-    //         text: '关于',
-    //         items: [
-    //           { text: '关于我', link: '/zh-CN/about' },
-    //           { text: '简历', link: '/zh-CN/about/resume' }
-    //         ]
-    //       },
-    //       { text: '联系', link: '/zh-CN/contact' },
-    //       {
-    //         text: '外部链接',
-    //         items: [
-    //           { text: 'Github', link: 'https://github.com/caseyisgood' },
-    //           { text: 'CSDN', link: 'https://blog.csdn.net/qq_62540475?spm=1000.2115.3001.5343' }
-    //         ]
-    //       }
-    //     ],
-
-    //     sidebar: {
-    //       '/zh-CN/contact/': [
-    //         {
-    //           text: '联系',
-    //           items: [
-    //             { text: '联系我', link: '/zh-CN/contact' }
-    //           ]
-    //         }
-    //       ],
-    //       '/zh-CN/about/': [
-    //         {
-    //           text: '关于',
-    //           items: [
-    //             { text: '关于我', link: '/zh-CN/about' },
-    //             { text: '简历', link: '/zh-CN/about/resume' }
-    //           ]
-    //         }
-    //       ]
-    //     },
-
-    //     footer: {
-    //       copyright: '版权所有 © 2025-至今 <a href="https://github.com/caseyisgood" target="_blank">王凯鑫</a>'
-    //     }
-    //   }
-
-    // }
   }
 })
 

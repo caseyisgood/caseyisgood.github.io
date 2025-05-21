@@ -8,15 +8,18 @@ next: false
 如果您有任何问题或建议，请随时联系我。我很乐意收到您的消息！🎉
 
 ## 邮箱
-[wankaixi@kean.edu](mailto:wankaixi@kean.edu)
+<!-- [wankaixi@kean.edu](mailto:wankaixi@kean.edu) -->
+[yes.kaixin@gmail.com](mailto:yes.kaixin@gmail.com)
+<!-- [1306318@wku.edu.cn](mailto:1306318@wku.edu.cn)【工作联系】 -->
 
 <!-- ## GitHub
 [caseyisgood](https://github.com/caseyisgood) -->
 
-## 微信
+<!-- ## 微信
 ```
 kxdrew0711
-```
+``` -->
+
 <!-- 
 ## 电话
 [+(86) 137-5832-5916](tel:+8613758325916) -->
@@ -31,5 +34,5 @@ kxdrew0711
 <!-- <AMapContainer /> -->
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; border-radius: 8px;">
-  <iframe src="https://uri.amap.com/marker?position=120.654240,27.919716&name=温州肯恩大学&key=9bd18bf8ad8f64fe37ce09ae227e3513" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://uri.amap.com/marker?position=120.654240,27.919716&name=温州肯恩大学&key=9bd18bf8ad8f64fe37ce09ae227e3513" style="position: absolute; top: 0; left: 0; width: 100%; height: 150%; border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

@@ -25,7 +25,7 @@ next:
 ## 📫 如何联系我...
 如果你对我的工作感兴趣，请随时联系我。我随时欢迎你的来信！<br>
 
-<a href="/contact" class="contact-button" style="display: inline-block; padding: 10px 20px; background-color: #5672cd; color: white; text-decoration: none; border-radius: 4px; cursor: pointer;">👉👉👉<strong>联系我</strong>👈👈👈</a>
+<a href="/zh-CN/contact" class="contact-button" style="display: inline-block; padding: 10px 20px; background-color: #5672cd; color: white; text-decoration: none; border-radius: 4px; cursor: pointer;">👉👉👉<strong>联系我</strong>👈👈👈</a>
 
 ## 📄 简历
 想了解更多关于我的信息，请查看下一页的[简历](/zh-CN/about/resume)。
