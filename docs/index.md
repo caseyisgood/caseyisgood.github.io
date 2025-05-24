@@ -2,10 +2,16 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+# <script setup>
+# if (typeof window !== 'undefined' && window.location.hostname === 'wangkaixin.net.cn') {
+#   window.location.replace('/zh-CN/');
+# }
+# </script>
+
 hero:
   name: "Wang Kaixin"
-  text: "A Computer Science Student"
-  tagline: Coding dreams into reality
+  text: "Stay hungry, Stay foolish"
+  # tagline: Coding dreams into reality
   # image:
   #   src: /imgs/profile-picture.jpg
   #   alt: Wang Kaixin
@@ -22,8 +28,8 @@ hero:
 
 
     - theme: brand
-      text: Get to Know Me
-      link: /about
+      text: Get Started Reading
+      link: /tutorials/
 
     - theme: alt
       text: Reach Out

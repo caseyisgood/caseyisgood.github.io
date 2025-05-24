@@ -11,7 +11,7 @@ next:
 "Why can't I understand anything in class?"
 "How do you actually learn programming?"
 "Why do I grasp everything the teacher explains, yet feel completely lost when writing code myself?"
-" can comprehend others' code, but I'd never think to write it that way myself?"
+"I can comprehend others' code, but I'd never think to write it that way myself?"
 
 <!-- 笔者在帮助他人学习编程时，常常会被问到这些问题。类似的问题还有很多，但是，它们背后的核心原因都是一样的：**知道 ≠ 会用**。许多人往往会有一个相同的误区，即认为只要我知道了某个知识点，就意味着我已经掌握这个知识点了。然而，事实并非如此。学习编程就像是学习写作，知道了一个新的知识点就像是认识了一个新字，可比谁的文章写得好绝不是比谁认识的字多——只有小学生会这样比赛，但想要写作又不能认识的字太少，否则想说话时无字可用，受限太大。中国作家余华曾表示：“我认识的汉字虽然不多，但是我认为写小说已经够了。” -->
 When helping others learn programming, I’m often asked these questions. There are many similar questions, but their root cause is the same: Knowing ≠ Being able to use. Many fall into the same misconception: believing that merely knowing a concept means they’ve mastered it.

@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+import Redirect from './components/Redirect.vue';
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/',
@@ -7,8 +10,34 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/icon_16x16.ico' }]
   ],
 
+  // markdown: {
+  //   container: {
+  //     tipLabel: 'TIP',
+  //     warningLabel: 'WARNING',
+  //     dangerLabel: 'DANGER',
+  //     infoLabel: 'INFO',
+  //     detailsLabel: 'Details',
+  //     custom: [
+  //       {
+  //         type: 'note',
+  //         defaultTitle: {
+  //           '/': 'NOTE',
+  //           '/zh-CN/': '备注'
+  //         }
+  //       },
+  //       {
+  //         type: 'important',
+  //         defaultTitle: {
+  //           '/': 'IMPORTANT',
+  //           '/zh-CN/': '重要'
+  //         }
+  //       }
+  //     ]
+  //   } as any
+  // },
+
   locales: {
-    root: {
+    'en': {
       label: 'English',
       lang: 'en-US',
       title: 'Wang Kaixin',
@@ -187,7 +216,8 @@ export default defineConfig({
               text: 'Java编程：从识字到创作 · Ⅰ',
               items: [
                 { text: '前言', link: '/zh-CN/tutorials/java01' },
-                { text: '第1章 - 绪论', link: '/zh-CN/tutorials/java01/chapter01' }
+                { text: '第1章 - 绪论', link: '/zh-CN/tutorials/java01/chapter01' },
+                { text: '第2章 - 初识程序与Java', link: '/zh-CN/tutorials/java01/chapter02' },
               ]
             }
           ]
@@ -215,6 +245,8 @@ export default defineConfig({
     }
   }
 })
+
+
 
 // interface LocaleSpecificConfig<ThemeConfig = any> {
 //   lang?: string

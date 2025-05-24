@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "王凯鑫"
-  text: "计算机科学专业学生"
-  tagline: 将梦想编码为现实
+  text: "求知若饥，虚心若愚"
+  # tagline: 将梦想编码为现实
   # image:
   #   src: /imgs/profile-picture.jpg
   #   alt: Wang Kaixin
@@ -14,8 +14,8 @@ hero:
   #   alt: Wang Kaixin
   actions:
     - theme: brand
-      text: 了解我
-      link: /zh-CN/about
+      text: 开始阅读
+      link: /zh-CN/tutorials/
 
     - theme: alt
       text: 联系我

@@ -3,6 +3,16 @@ prev: false
 next: 
     text: '第1章 - 绪论'
     link: '/zh-CN/tutorials/java01/chapter01'
+title: '前言 | Java编程：从识字到创作 · Ⅰ '
+description: '本教程采用独特的语言习得框架，帮助初学者掌握Java编程。通过"先问为何，再学如何"的教学方法，让学习者理解编程的本质，培养解决实际问题的能力。'
+keywords: 
+  - Java编程
+  - 程序概念
+  - Java语言
+  - Java教程
+  - 编程入门
+author: '王凯鑫'
+date: '2025-05-21'
 ---
 
 # 前言
